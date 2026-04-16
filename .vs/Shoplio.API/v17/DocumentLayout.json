@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Rifatul\\Documents\\Shoplio.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CD56D5EF-5BC5-4598-8EAE-19E5BF22E0C3}|Shoplio.API\\Shoplio.Web.csproj|c:\\users\\rifatul\\documents\\shoplio.api\\shoplio.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD56D5EF-5BC5-4598-8EAE-19E5BF22E0C3}|Shoplio.API\\Shoplio.Web.csproj|solutionrelative:shoplio.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD56D5EF-5BC5-4598-8EAE-19E5BF22E0C3}|Shoplio.API\\Shoplio.Web.csproj|c:\\users\\rifatul\\documents\\shoplio.api\\shoplio.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD56D5EF-5BC5-4598-8EAE-19E5BF22E0C3}|Shoplio.API\\Shoplio.Web.csproj|solutionrelative:shoplio.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Documents\\Shoplio.Api\\Shoplio.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Shoplio.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Rifatul\\Documents\\Shoplio.Api\\Shoplio.API\\appsettings.json",
+              "RelativeToolTip": "Shoplio.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-16T12:47:53.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Documents\\Shoplio.Api\\Shoplio.API\\Program.cs",
               "RelativeDocumentMoniker": "Shoplio.API\\Program.cs",
               "ToolTip": "C:\\Users\\Rifatul\\Documents\\Shoplio.Api\\Shoplio.API\\Program.cs",
               "RelativeToolTip": "Shoplio.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABEAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T11:36:47.682Z",
               "EditorCaption": ""
