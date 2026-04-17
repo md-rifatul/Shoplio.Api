@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Shoplio.Application\Shoplio.Application.csproj" />
+    <ProjectReference Include="..\Shoplio.Domain\Shoplio.Domain.csproj" />
   </ItemGroup>
 
 </Project>
