@@ -1,5 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Shoplio.Application.Interfaces;
 using Shoplio.Application.Interfaces.IRepository;
+using Shoplio.Application.Interfaces.IServices;
+using Shoplio.Application.Mapping;
+using Shoplio.Application.Services;
 using Shoplio.Infrastructure.Data;
 using Shoplio.Infrastructure.Data.Repositories;
 
@@ -17,10 +22,16 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddAutoMapper(typeof(CategoryProfile).Assembly);
+
 
 //RepoRegister
 builder.Services.AddScoped(typeof(IReadRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(IWriteRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+//Services
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 //UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();

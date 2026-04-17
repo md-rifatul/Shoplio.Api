@@ -8,6 +8,6 @@ namespace Shoplio.Application.Interfaces.IRepository
 {
     public interface IUnitOfWork
     {
-        Task<int> Commit();
+        Task<int> CommitAsync();
     }
 }

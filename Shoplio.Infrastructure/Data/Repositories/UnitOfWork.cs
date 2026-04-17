@@ -15,7 +15,7 @@ namespace Shoplio.Infrastructure.Data.Repositories
             _context = context;
         }
 
-        public async Task<int> Commit()
+        public async Task<int> CommitAsync()
         {
             return await _context.SaveChangesAsync();
         }
