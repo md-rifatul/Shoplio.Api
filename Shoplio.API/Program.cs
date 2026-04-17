@@ -19,8 +19,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 
 //RepoRegister
-builder.Services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
-builder.Services.AddScoped(typeof(IWriteRepository<>), typeof(WriteRepository<>));
+builder.Services.AddScoped(typeof(IReadRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(IWriteRepository<>), typeof(Repository<>));
 
 //UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
