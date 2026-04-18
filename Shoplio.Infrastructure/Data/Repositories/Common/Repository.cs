@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Shoplio.Application.Interfaces.IRepository;
 
-namespace Shoplio.Infrastructure.Data.Repositories
+namespace Shoplio.Infrastructure.Data.Repositories.Common
 {
     public class Repository<T> : BaseRepository<T>, IReadRepository<T>, IWriteRepository<T>
         where T : class

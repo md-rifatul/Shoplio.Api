@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shoplio.Infrastructure.Data.Repositories
+namespace Shoplio.Infrastructure.Data.Repositories.Common
 {
     public class BaseRepository<T> where T : class
     {

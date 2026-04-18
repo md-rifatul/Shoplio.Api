@@ -7,6 +7,7 @@ using Shoplio.Application.Mapping;
 using Shoplio.Application.Services;
 using Shoplio.Infrastructure.Data;
 using Shoplio.Infrastructure.Data.Repositories;
+using Shoplio.Infrastructure.Data.Repositories.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,15 +24,18 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddAutoMapper(typeof(CategoryProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(ProductProfile).Assembly);
 
 
 //RepoRegister
 builder.Services.AddScoped(typeof(IReadRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(IWriteRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 //Services
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 //UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
