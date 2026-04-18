@@ -1,69 +1,50 @@
-## =====================================================
-## ASP.NET Core / Visual Studio
-## =====================================================
-
-# Build results
+## Build and User-specific folders
 bin/
 obj/
+out/
+[Dd]ebug/
+[Rr]elease/
 
-# User-specific files
+## Visual Studio files
+.vs/
 *.user
-*.suo
 *.userosscache
-*.sln.docstates
+*.sln.doccache
 
-# Rider / JetBrains
-.idea/
-*.DotSettings.user
-
-# Visual Studio Code
+## VS Code files
 .vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# Publish output
-publish/
-wwwroot/
+## Secrets and Local Settings
+# Never commit actual secrets or local dev settings
+usersecrets.json
+appsettings.Development.json
+appsettings.Local.json
 
-# Logs
-*.log
-logs/
+## Packages (NuGet)
+*.nupkg
+**/packages/*
+!**/packages/build/
+restore.msg
+project.lock.json
+project.assets.json
 
-# Test results
-TestResults/
-*.trx
-
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
-
-# EF Core
-Migrations/*Designer.cs
-Migrations/*.snapshot
-
-# SQLite DB files (if used)
+## Entity Framework & Databases
 *.db
 *.db-shm
 *.db-wal
+*.sqlproj.user
+Migrations/*.designer.cs
 
-# Local configuration files
-appsettings.Development.json
-appsettings.Production.json
-
-# Secrets
-secrets.json
-*.secrets.json
-
-# Dotnet tools
-.toolstargets
-.project.assets.json
-
-# NuGet
-*.nupkg
-*.snupkg
-packages/
-.nuget/
-
-# OS files
+## OS generated files
 .DS_Store
 Thumbs.db
 
-# IIS Express
-.iisexpress/
+## Test Results
+TestResults/
+*.trx
+*.coveragereport
+*.coverage
