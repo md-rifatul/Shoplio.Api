@@ -14,7 +14,7 @@ namespace Shoplio.Application.Mapping
         public ProductProfile()
         {
             CreateMap<Product, ProductResponseDto>()
-                .ForMember(dest=>dest.CategoryName,opt=>opt.MapFrom(src=>src.Category.Name))
+                .ForMember(dest=>dest.CategoryName,opt=>opt.MapFrom(src=>src.Category != null ? src.Category.Name : string.Empty))
                 .ForMember(dest => dest.ImageUrls,opt => opt.MapFrom(src =>
                     src.Images != null
                         ? src.Images.Select(i => i.ImageUrl ?? string.Empty)
@@ -28,6 +28,12 @@ namespace Shoplio.Application.Mapping
                         ImageUrl = url
                     })
                 ));
+
+
+            CreateMap<ProductUpdateDto, Product>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ForMember(dest => dest.Category, opt => opt.Ignore())
+                .ForMember(dest => dest.Images, opt => opt.Ignore());
         }
     }
 }

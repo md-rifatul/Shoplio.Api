@@ -12,6 +12,8 @@ namespace Shoplio.Application.Interfaces.IServices
         Task<IEnumerable<ProductResponseDto>> GetAllProductsAsync();
         Task<ProductResponseDto?> GetByIdAsync(int id);
         Task<ProductResponseDto> CreateProductAsync(ProductCreateDto dto);
+        Task UpdateAsync(int  id, ProductUpdateDto dto);
+        Task DeleteAsync(int id);
 
     }
 }

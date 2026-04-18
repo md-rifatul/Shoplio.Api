@@ -52,5 +52,38 @@ namespace Shoplio.Application.Services
             var result = _mapper.Map<ProductResponseDto>(product);
             return result;
         }
+
+        public async Task UpdateAsync(int id, ProductUpdateDto dto)
+        {
+            var products = await _productRepository.GetAsync(
+                p => p.Id == id,
+                include: query => query.Include(p => p.Category)
+                                       .Include(p => p.Images));
+            var product = products.FirstOrDefault();
+            if (product == null)
+                throw new KeyNotFoundException("Product Not Found");
+
+            _mapper.Map(dto, product);
+
+            if (dto.ImageUrls is not null)
+            {
+                product.Images ??= new List<ProductImage>();
+                product.Images.Clear();
+                foreach (var url in dto.ImageUrls)
+                {
+                    if (!string.IsNullOrWhiteSpace(url))
+                        product.Images.Add(new ProductImage { ImageUrl = url });
+                }
+            }
+
+            await _unitOfWork.CommitAsync();
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            var product = await _productRepository.GetByIdAsync(id);
+             _productRepository.Delete(product);
+            await _unitOfWork.CommitAsync();
+        }
     }
 }

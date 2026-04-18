@@ -40,5 +40,26 @@ namespace Shoplio.Web.Controllers
 
             return Ok(product);
         }
+
+        [HttpPut("update/{id}")]
+        public async Task<IActionResult> ProductUpdate(int id,  [FromBody] ProductUpdateDto dto)
+        {
+            try
+            {
+                await _productService.UpdateAsync(id, dto);
+                return Ok();
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpDelete("delete/{id}")]
+        public async Task<IActionResult> ProductDeleteById(int id)
+        {
+            await _productService.DeleteAsync(id);
+            return Ok();
+        }
     }
 }
