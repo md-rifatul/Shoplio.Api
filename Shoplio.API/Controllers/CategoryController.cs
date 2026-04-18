@@ -31,5 +31,26 @@ namespace Shoplio.Web.Controllers
             return Ok(category);
         }
 
+        [HttpDelete("delete/{id}")]
+        public async Task<IActionResult> CategoryDeleteById(int id)
+        {
+            await _categoryService.DeleteAsync(id);
+            return Ok();
+        }
+
+        [HttpPut("update/{id}")]
+        public async Task<IActionResult> CategoryUpdate(int id, [FromBody] CategoryUpdateDto dto)
+        {
+            await _categoryService.UpdateAsync(id, dto);
+            return Ok();
+        }
+        [HttpGet("get/{id}")]
+        public async Task<IActionResult> GetCategoryById(int id)
+        {
+            var category = await _categoryService.GetByIdAsync(id);
+            return Ok(category);
+        }
+
+
     }
 }
