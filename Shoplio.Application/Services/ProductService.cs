@@ -30,7 +30,17 @@ namespace Shoplio.Application.Services
             include: query => query.Include(p => p.Category)
                            .Include(p => p.Images)
         );
-            return _mapper.Map<IEnumerable<ProductResponseDto>>(products);
+            var result = products.Select(product =>
+            {
+                var dto = _mapper.Map<ProductResponseDto>(product);
+
+                dto.ImageUrls = product.Images?
+                    .Select(img => img.ImageUrl!)
+                    .ToList();
+
+                return dto;
+            });
+            return result;
         }
 
         public async Task<ProductResponseDto?> GetByIdAsync(int id)

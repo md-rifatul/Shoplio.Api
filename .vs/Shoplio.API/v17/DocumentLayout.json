@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD56D5EF-5BC5-4598-8EAE-19E5BF22E0C3}|Shoplio.API\\Shoplio.Web.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD56D5EF-5BC5-4598-8EAE-19E5BF22E0C3}|Shoplio.API\\Shoplio.Web.csproj|solutionrelative:shoplio.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.application\\mapping\\productprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|solutionrelative:shoplio.application\\mapping\\productprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|solutionrelative:shoplio.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DA06463-4DB2-453E-A567-CA3A2858BA48}|Shoplio.Domain\\Shoplio.Domain.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DA06463-4DB2-453E-A567-CA3A2858BA48}|Shoplio.Domain\\Shoplio.Domain.csproj|solutionrelative:shoplio.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.application\\mapping\\productprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|solutionrelative:shoplio.application\\mapping\\productprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.application\\dtos\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|solutionrelative:shoplio.application\\dtos\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD56D5EF-5BC5-4598-8EAE-19E5BF22E0C3}|Shoplio.API\\Shoplio.Web.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD56D5EF-5BC5-4598-8EAE-19E5BF22E0C3}|Shoplio.API\\Shoplio.Web.csproj|solutionrelative:shoplio.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7DA06463-4DB2-453E-A567-CA3A2858BA48}|Shoplio.Domain\\Shoplio.Domain.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.domain\\entities\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DA06463-4DB2-453E-A567-CA3A2858BA48}|Shoplio.Domain\\Shoplio.Domain.csproj|solutionrelative:shoplio.domain\\entities\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|solutionrelative:shoplio.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|solutionrelative:shoplio.application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7DFD6E1-128F-4904-B7E6-9380D8D61D5E}|Shoplio.Infrastructure\\Shoplio.Infrastructure.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.infrastructure\\data\\repositories\\common\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.application\\mapping\\categoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|solutionrelative:shoplio.application\\mapping\\categoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.application\\dtos\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31CC26ED-7E5A-4B8D-88DE-FCBC90338BDA}|Shoplio.Application\\Shoplio.Application.csproj|solutionrelative:shoplio.application\\dtos\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD56D5EF-5BC5-4598-8EAE-19E5BF22E0C3}|Shoplio.API\\Shoplio.Web.csproj|c:\\users\\rifatul\\desktop\\shoplio.api\\shoplio.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,42 +130,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Mapping\\ProductProfile.cs",
-              "RelativeDocumentMoniker": "Shoplio.Application\\Mapping\\ProductProfile.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Mapping\\ProductProfile.cs",
-              "RelativeToolTip": "Shoplio.Application\\Mapping\\ProductProfile.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T15:44:00.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Shoplio.Application\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Services\\ProductService.cs",
-              "RelativeToolTip": "Shoplio.Application\\Services\\ProductService.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAcwFQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T15:34:05.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.API\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Shoplio.API\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.API\\Controllers\\ProductController.cs*",
-              "RelativeToolTip": "Shoplio.API\\Controllers\\ProductController.cs*",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwB8AAAAaAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Shoplio.API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-18T16:18:16.003Z",
               "EditorCaption": ""
@@ -200,19 +171,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Domain\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "Shoplio.Domain\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Domain\\Entities\\Product.cs",
-              "RelativeToolTip": "Shoplio.Domain\\Entities\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T13:19:56.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Interfaces\\IServices\\IProductService.cs",
@@ -237,18 +195,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "Shoplio.Application\\Services\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Services\\CategoryService.cs",
-              "RelativeToolTip": "Shoplio.Application\\Services\\CategoryService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAkwBcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T14:54:31.082Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Infrastructure\\Data\\Repositories\\Common\\Repository.cs",
@@ -261,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProductImage.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Domain\\Entities\\ProductImage.cs",
               "RelativeDocumentMoniker": "Shoplio.Domain\\Entities\\ProductImage.cs",
@@ -283,6 +229,32 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-18T15:32:26.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Shoplio.Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "Shoplio.Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T15:34:05.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Mapping\\ProductProfile.cs",
+              "RelativeDocumentMoniker": "Shoplio.Application\\Mapping\\ProductProfile.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Mapping\\ProductProfile.cs",
+              "RelativeToolTip": "Shoplio.Application\\Mapping\\ProductProfile.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T15:44:00.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -347,18 +319,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ProductResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\DTOs\\ProductResponseDto.cs",
-              "RelativeDocumentMoniker": "Shoplio.Application\\DTOs\\ProductResponseDto.cs",
-              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\DTOs\\ProductResponseDto.cs",
-              "RelativeToolTip": "Shoplio.Application\\DTOs\\ProductResponseDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABIAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T15:36:58.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.API\\Program.cs",
               "RelativeDocumentMoniker": "Shoplio.API\\Program.cs",
@@ -370,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "20260418163132_UddateProductTable.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Infrastructure\\Migrations\\20260418163132_UddateProductTable.cs",
               "RelativeDocumentMoniker": "Shoplio.Infrastructure\\Migrations\\20260418163132_UddateProductTable.cs",
@@ -382,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Shoplio.API\\Properties\\launchSettings.json",
@@ -394,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Infrastructure\\Data\\Repositories\\Common\\BaseRepository.cs",
               "RelativeDocumentMoniker": "Shoplio.Infrastructure\\Data\\Repositories\\Common\\BaseRepository.cs",
@@ -406,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "CategoryResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\DTOs\\CategoryResponseDto.cs",
               "RelativeDocumentMoniker": "Shoplio.Application\\DTOs\\CategoryResponseDto.cs",
@@ -418,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Domain\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "Shoplio.Domain\\Entities\\Category.cs",
@@ -430,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Interfaces\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "Shoplio.Application\\Interfaces\\ICategoryRepository.cs",
@@ -442,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Infrastructure\\Data\\Repositories\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "Shoplio.Infrastructure\\Data\\Repositories\\CategoryRepository.cs",
@@ -454,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.API\\appsettings.json",
               "RelativeDocumentMoniker": "Shoplio.API\\appsettings.json",
@@ -466,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.API\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "Shoplio.API\\WeatherForecast.cs",
@@ -478,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "Shoplio.API.http",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.API\\Shoplio.API.http",
               "RelativeDocumentMoniker": "Shoplio.API\\Shoplio.API.http",
@@ -490,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Infrastructure\\Data\\Repositories\\Common\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Shoplio.Infrastructure\\Data\\Repositories\\Common\\UnitOfWork.cs",
@@ -502,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Interfaces\\IRepository\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Shoplio.Application\\Interfaces\\IRepository\\IUnitOfWork.cs",
@@ -511,6 +471,74 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T19:19:57.859Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "4fd9e9c5-1d07-4f27-af5c-72c0ea196575",
+        "Display": 1,
+        "X": 286,
+        "Y": 80,
+        "Width": 1639,
+        "Height": 957,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Shoplio.Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Shoplio.Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T13:19:56.445Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "903fa85d-fafc-4387-89a6-30e84849e34e",
+        "Display": 1,
+        "X": -703,
+        "Y": 85,
+        "Width": 1639,
+        "Height": 957,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\DTOs\\ProductResponseDto.cs",
+              "RelativeDocumentMoniker": "Shoplio.Application\\DTOs\\ProductResponseDto.cs",
+              "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\DTOs\\ProductResponseDto.cs",
+              "RelativeToolTip": "Shoplio.Application\\DTOs\\ProductResponseDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T15:36:58.824Z",
+              "EditorCaption": ""
             }
           ]
         }

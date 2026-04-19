@@ -14,11 +14,8 @@ namespace Shoplio.Application.Mapping
         public ProductProfile()
         {
             CreateMap<Product, ProductResponseDto>()
-                .ForMember(dest=>dest.CategoryName,opt=>opt.MapFrom(src=>src.Category != null ? src.Category.Name : string.Empty))
-                .ForMember(dest => dest.ImageUrls,opt => opt.MapFrom(src =>
-                    src.Images != null
-                        ? src.Images.Select(i => i.ImageUrl ?? string.Empty)
-                        : Enumerable.Empty<string>()));
+                .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
+                .ForMember(dest=>dest.ImageUrls,opt=>opt.Ignore());
 
 
             CreateMap<ProductCreateDto, Product>()
