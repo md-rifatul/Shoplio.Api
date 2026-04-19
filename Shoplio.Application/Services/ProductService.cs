@@ -28,7 +28,7 @@ namespace Shoplio.Application.Services
         {
             var products = await _productRepository.GetAllAsync(
             include: query => query.Include(p => p.Category)
-                           .Include(p => p.Images)
+                                   .Include(p => p.Images)
         );
             var result = products.Select(product =>
             {
@@ -51,7 +51,13 @@ namespace Shoplio.Application.Services
                                        .Include(p => p.Images)
             );
             var product = products.FirstOrDefault();
-            return _mapper.Map<ProductResponseDto>(product);
+
+            var dto = _mapper.Map<ProductResponseDto>(product);
+
+            dto.ImageUrls = product.Images?
+                .Select(img=>img.ImageUrl!)
+                .ToList();
+            return dto;
         }
 
         public async Task<ProductResponseDto> CreateProductAsync(ProductCreateDto dto)
