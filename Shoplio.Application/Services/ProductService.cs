@@ -93,20 +93,25 @@ namespace Shoplio.Application.Services
             if (product == null)
                 throw new KeyNotFoundException("Product Not Found");
 
+
+
             _mapper.Map(dto, product);
 
-            if (dto.ImageUrls is not null)
+            // 2. Handle images (replace all)
+            if (dto.ImageUrls != null)
             {
-                product.Images ??= new List<ProductImage>();
-                product.Images.Clear();
-                foreach (var url in dto.ImageUrls)
-                {
-                    if (!string.IsNullOrWhiteSpace(url))
-                        product.Images.Add(new ProductImage { ImageUrl = url });
-                }
+                product.Images = dto.ImageUrls
+                    .Where(url => !string.IsNullOrWhiteSpace(url))
+                    .Select(url => new ProductImage
+                    {
+                        ImageUrl = url
+                    })
+                    .ToList();
             }
 
+            // 3. Save changes
             await _unitOfWork.CommitAsync();
+
         }
 
         public async Task DeleteAsync(int id)

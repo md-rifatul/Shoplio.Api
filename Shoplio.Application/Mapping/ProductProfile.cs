@@ -23,8 +23,6 @@ namespace Shoplio.Application.Mapping
 
 
             CreateMap<ProductUpdateDto, Product>()
-                .ForMember(dest => dest.Id, opt => opt.Ignore())
-                .ForMember(dest => dest.Category, opt => opt.Ignore())
                 .ForMember(dest => dest.Images, opt => opt.Ignore());
         }
     }
