@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Shoplio.Application.DTOs;
 using Shoplio.Application.Interfaces.IServices;
+using Shoplio.Domain.Statics;
 
 namespace Shoplio.Web.Controllers
 {
@@ -23,6 +25,7 @@ namespace Shoplio.Web.Controllers
         }
 
         [HttpPost("create")]
+        [Authorize(Roles = Roles.Seller)]
         public async Task<IActionResult> CategoryCreate([FromBody]CategoryCreateDto dto)
         {
             if(!ModelState.IsValid)
@@ -32,6 +35,7 @@ namespace Shoplio.Web.Controllers
         }
 
         [HttpDelete("delete/{id}")]
+        [Authorize(Roles = Roles.Seller)]
         public async Task<IActionResult> CategoryDeleteById(int id)
         {
             await _categoryService.DeleteAsync(id);
@@ -39,6 +43,7 @@ namespace Shoplio.Web.Controllers
         }
 
         [HttpPut("update/{id}")]
+        [Authorize(Roles = Roles.Seller)]
         public async Task<IActionResult> CategoryUpdate(int id, [FromBody] CategoryUpdateDto dto)
         {
             await _categoryService.UpdateAsync(id, dto);

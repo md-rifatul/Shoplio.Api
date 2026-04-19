@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Shoplio.Application.DTOs;
 using Shoplio.Application.Interfaces.IServices;
+using Shoplio.Domain.Enums;
+using Shoplio.Domain.Statics;
 
 namespace Shoplio.Web.Controllers
 {
@@ -23,6 +26,7 @@ namespace Shoplio.Web.Controllers
         }
 
         [HttpPost("create")]
+        [Authorize(Roles =Roles.Seller)]
         public async Task<IActionResult> CreateProduct([FromBody] ProductCreateDto dto)
         {
             var createdProduct = await _productService.CreateProductAsync(dto);
@@ -30,6 +34,7 @@ namespace Shoplio.Web.Controllers
         }
 
         [HttpGet("get/{id}")]
+        [Authorize(Roles = Roles.Seller)]
         public async Task<IActionResult> GetProductById(int id)
         {
             var product = await _productService.GetByIdAsync(id);
@@ -42,6 +47,7 @@ namespace Shoplio.Web.Controllers
         }
 
         [HttpPut("update/{id}")]
+        [Authorize(Roles = Roles.Seller)]
         public async Task<IActionResult> ProductUpdate(int id,  [FromBody] ProductUpdateDto dto)
         {
             try
@@ -56,6 +62,7 @@ namespace Shoplio.Web.Controllers
         }
 
         [HttpDelete("delete/{id}")]
+        [Authorize(Roles = Roles.Seller)]
         public async Task<IActionResult> ProductDeleteById(int id)
         {
             await _productService.DeleteAsync(id);
