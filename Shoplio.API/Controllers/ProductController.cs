@@ -29,7 +29,7 @@ namespace Shoplio.Web.Controllers
             return CreatedAtAction(nameof(GetProductById), new { id = createdProduct.Id }, createdProduct);
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("get/{id}")]
         public async Task<IActionResult> GetProductById(int id)
         {
             var product = await _productService.GetByIdAsync(id);
