@@ -19,12 +19,7 @@ namespace Shoplio.Application.Mapping
 
 
             CreateMap<ProductCreateDto, Product>()
-                .ForMember(dest => dest.Images, opt => opt.MapFrom(src =>
-                    (src.ImageUrls ?? Enumerable.Empty<string>()).Select(url => new ProductImage
-                    {
-                        ImageUrl = url
-                    })
-                ));
+                .ForMember(dest=>dest.Images,opt=>opt.Ignore());
 
 
             CreateMap<ProductUpdateDto, Product>()

@@ -63,9 +63,23 @@ namespace Shoplio.Application.Services
         public async Task<ProductResponseDto> CreateProductAsync(ProductCreateDto dto)
         {
             var product = _mapper.Map<Product>(dto);
+
+            product.Images = dto.ImageUrls
+                .Select(url => new ProductImage
+                {
+                    ImageUrl = url
+                })
+                .ToList();
+
             await _productRepository.AddAsync(product);
             await _unitOfWork.CommitAsync();
             var result = _mapper.Map<ProductResponseDto>(product);
+
+            // 5. Include images in response
+            result.ImageUrls = product.Images?
+                .Select(i => i.ImageUrl!)
+                .ToList();
+
             return result;
         }
 
