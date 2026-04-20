@@ -18,6 +18,7 @@ namespace Shoplio.Web.Controllers
         }
 
         [HttpGet("all")]
+        [Authorize(Roles =Roles.Seller)]
         public async Task<IActionResult> GetAllCategory()
         {
             var categories = await _categoryService.GetAllAsync();
