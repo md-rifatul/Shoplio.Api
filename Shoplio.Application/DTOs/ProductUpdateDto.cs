@@ -15,6 +15,7 @@ namespace Shoplio.Application.DTOs
         public int StockQuantity { get; set; }
 
         public int CategoryId { get; set; }
+        public int SellerId { get; set; }
         public ICollection<string>? ImageUrls { get; set; }
     }
 }

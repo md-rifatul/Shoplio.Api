@@ -25,6 +25,7 @@ namespace Shoplio.Application.Mapping
 
 
             CreateMap<ProductUpdateDto, Product>()
+                .ForMember(dest=>dest.SellerId,opt=>opt.MapFrom(src => src.SellerId))
                 .ForMember(dest => dest.Images, opt => opt.Ignore());
         }
     }

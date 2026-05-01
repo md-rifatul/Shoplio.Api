@@ -17,7 +17,7 @@ namespace Shoplio.Application.Interfaces.IRepository
             bool asNoTracking = true);
 
         Task<List<T>> GetAsync(
-            Expression<Func<T, bool>> predicate,
+            Expression<Func<T, bool>> filter,
             Func<IQueryable<T>, IQueryable<T>>? include = null);
 
         Task<(List<T> Items, int TotalCount)> GetPagedAsync(

@@ -40,7 +40,7 @@ namespace Shoplio.Infrastructure.Data.Repositories.Common
 
         // 🔍 Filtered Get
         public async Task<List<T>> GetAsync(
-            System.Linq.Expressions.Expression<Func<T, bool>> predicate,
+            System.Linq.Expressions.Expression<Func<T, bool>> filter,
             Func<IQueryable<T>, IQueryable<T>>? include = null)
         {
             IQueryable<T> query = _dbSet;
@@ -48,7 +48,7 @@ namespace Shoplio.Infrastructure.Data.Repositories.Common
             if (include != null)
                 query = include(query);
 
-            return await query.Where(predicate).ToListAsync();
+            return await query.Where(filter).ToListAsync();
         }
 
         // 📄 Pagination

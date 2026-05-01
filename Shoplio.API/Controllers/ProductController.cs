@@ -72,12 +72,30 @@ namespace Shoplio.Web.Controllers
         }
 
         [Authorize(Roles = Roles.Seller)]
-        [HttpGet("my-products")]
+        [HttpGet("mine")]
         public async Task<IActionResult> GetMyProducts()
         {
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
             var products = await _productService.GetProductsBySellerAsync(userId);
             return Ok(products);
+        }
+
+        [Authorize(Roles =Roles.Seller)]
+        [HttpGet("mine/{id}")]
+        public async Task<IActionResult> GetMyProductById(int id)
+        {
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+            var product = await _productService.GetProductBySellerIdAsync(id,userId);
+            return Ok(product);
+        }
+
+        [Authorize(Roles = Roles.Seller)]
+        [HttpPut("mine/{id}")]
+        public async Task<IActionResult> UpdateMineProduct(int id, [FromBody] ProductUpdateDto dto)
+        {
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+            await _productService.UpdateSellerProductAsync(id, userId, dto);
+            return Ok(dto);
         }
     }
 }

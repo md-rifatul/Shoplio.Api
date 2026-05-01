@@ -50,6 +50,7 @@ namespace Shoplio.Application.Services
                 p => p.Id == id,
                 include: query => query.Include(p => p.Category)
                                        .Include(p => p.Images)
+                                       .Include(p=>p.Seller)
             );
             var product = products.FirstOrDefault();
 
@@ -144,6 +145,53 @@ namespace Shoplio.Application.Services
                 return dto;
             });
             return result;
+        }
+
+        public async Task<ProductResponseDto> GetProductBySellerIdAsync(int id, int sellerId)
+        {
+            var products = await _productRepository.GetAsync(
+                p => p.Id == id && p.SellerId == sellerId,
+                include: query => query.Include(p => p.Category)
+                                       .Include(p => p.Images)
+                                       .Include(p=>p.Seller)
+            );
+            var product = products.FirstOrDefault();
+
+            var dto = _mapper.Map<ProductResponseDto>(product);
+            dto.ImageUrls = product.Images?
+                .Select(img => img.ImageUrl!)
+                .ToList();
+            return dto;
+        }
+
+        public async Task UpdateSellerProductAsync(int id, int userId, ProductUpdateDto dto)
+        {
+            var products = await _productRepository.GetAsync(
+                filter: p=>p.Id==id && p.SellerId==userId,
+                include: query => query.Include(p => p.Category)
+                                       .Include(p => p.Images));
+            var product = products.FirstOrDefault();
+            if (product == null)
+                throw new KeyNotFoundException("Product Not Found");
+
+
+
+            _mapper.Map(dto, product);
+
+            // 2. Handle images (replace all)
+            if (dto.ImageUrls != null)
+            {
+                product.Images = dto.ImageUrls
+                    .Where(url => !string.IsNullOrWhiteSpace(url))
+                    .Select(url => new ProductImage
+                    {
+                        ImageUrl = url
+                    })
+                    .ToList();
+            }
+
+            // 3. Save changes
+            await _unitOfWork.CommitAsync();
         }
     }
 }
