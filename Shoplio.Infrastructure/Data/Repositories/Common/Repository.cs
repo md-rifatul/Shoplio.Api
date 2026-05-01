@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Shoplio.Application.Interfaces.IRepository;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Shoplio.Infrastructure.Data.Repositories.Common
 {
@@ -16,6 +18,7 @@ namespace Shoplio.Infrastructure.Data.Repositories.Common
 
         // 📋 Get All
         public async Task<List<T>> GetAllAsync(
+            Expression<Func<T, bool>>? filter = null,
             Func<IQueryable<T>, IQueryable<T>>? include = null,
             bool asNoTracking = true)
         {
@@ -24,6 +27,11 @@ namespace Shoplio.Infrastructure.Data.Repositories.Common
             if (asNoTracking)
                 query = query.AsNoTracking();
 
+            // 🔥 APPLY FILTER
+            if (filter != null)
+                query = query.Where(filter);
+
+            // 🔥 APPLY INCLUDE
             if (include != null)
                 query = include(query);
 

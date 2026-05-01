@@ -29,6 +29,7 @@ namespace Shoplio.Application.Services
             var products = await _productRepository.GetAllAsync(
             include: query => query.Include(p => p.Category)
                                    .Include(p => p.Images)
+                                   .Include(p => p.Seller)
         );
             var result = products.Select(product =>
             {
@@ -60,10 +61,10 @@ namespace Shoplio.Application.Services
             return dto;
         }
 
-        public async Task<ProductResponseDto> CreateProductAsync(ProductCreateDto dto)
+        public async Task<ProductResponseDto> CreateProductAsync(ProductCreateDto dto, int sellerId)
         {
             var product = _mapper.Map<Product>(dto);
-
+            product.SellerId = sellerId;
             product.Images = dto.ImageUrls
                 .Select(url => new ProductImage
                 {
@@ -119,6 +120,30 @@ namespace Shoplio.Application.Services
             var product = await _productRepository.GetByIdAsync(id);
              _productRepository.Delete(product);
             await _unitOfWork.CommitAsync();
+        }
+
+        public async Task<IEnumerable<ProductResponseDto>> GetProductsBySellerAsync(int sellerId)
+        {
+            var products = await _productRepository.GetAllAsync(
+                filter: p=>p.SellerId == sellerId,
+                include: query=>query.Include(p=>p.Category)
+                                     .Include(p=>p.Images)
+                                     .Include(p=>p.Seller)
+                );
+            var result = products.Select(product =>
+            {
+                var dto = _mapper.Map<ProductResponseDto>(product);
+
+                dto.ImageUrls = product.Images?
+                    .Select(img => img.ImageUrl!)
+                    .ToList();
+
+                dto.SellerId = product.SellerId ?? 0;
+                dto.SellerName = product.Seller?.Name;
+
+                return dto;
+            });
+            return result;
         }
     }
 }

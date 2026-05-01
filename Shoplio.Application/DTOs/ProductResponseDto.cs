@@ -18,5 +18,8 @@ namespace Shoplio.Application.DTOs
         public int CategoryId { get; set; }
         public string CategoryName { get; set; } = string.Empty;
         public ICollection<string> ImageUrls { get; set; } = new List<string>();
+
+        public int SellerId { get; set; }
+        public string SellerName { get;set; }
     }
 }

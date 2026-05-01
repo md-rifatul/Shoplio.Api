@@ -5,6 +5,7 @@ using Shoplio.Application.DTOs;
 using Shoplio.Application.Interfaces.IServices;
 using Shoplio.Domain.Enums;
 using Shoplio.Domain.Statics;
+using System.Security.Claims;
 
 namespace Shoplio.Web.Controllers
 {
@@ -29,7 +30,8 @@ namespace Shoplio.Web.Controllers
         [Authorize(Roles =Roles.Seller)]
         public async Task<IActionResult> CreateProduct([FromBody] ProductCreateDto dto)
         {
-            var createdProduct = await _productService.CreateProductAsync(dto);
+            var sellerId = int .Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+            var createdProduct = await _productService.CreateProductAsync(dto, sellerId);
             return CreatedAtAction(nameof(GetProductById), new { id = createdProduct.Id }, createdProduct);
         }
 
@@ -67,6 +69,15 @@ namespace Shoplio.Web.Controllers
         {
             await _productService.DeleteAsync(id);
             return Ok();
+        }
+
+        [Authorize(Roles = Roles.Seller)]
+        [HttpGet("my-products")]
+        public async Task<IActionResult> GetMyProducts()
+        {
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+            var products = await _productService.GetProductsBySellerAsync(userId);
+            return Ok(products);
         }
     }
 }

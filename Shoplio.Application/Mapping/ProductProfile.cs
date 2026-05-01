@@ -15,6 +15,8 @@ namespace Shoplio.Application.Mapping
         {
             CreateMap<Product, ProductResponseDto>()
                 .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
+                .ForMember(dest => dest.SellerId, opt => opt.MapFrom(src => src.SellerId))
+                .ForMember(dest => dest.SellerName, opt => opt.MapFrom(src => src.Seller.Name))
                 .ForMember(dest=>dest.ImageUrls,opt=>opt.Ignore());
 
 

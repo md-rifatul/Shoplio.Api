@@ -12,6 +12,7 @@ namespace Shoplio.Application.Interfaces.IRepository
         Task<T?> GetByIdAsync(int id);
 
         Task<List<T>> GetAllAsync(
+            Expression<Func<T, bool>>? filter = null,
             Func<IQueryable<T>, IQueryable<T>>? include = null,
             bool asNoTracking = true);
 
