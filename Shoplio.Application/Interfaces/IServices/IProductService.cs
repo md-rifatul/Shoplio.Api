@@ -15,6 +15,7 @@ namespace Shoplio.Application.Interfaces.IServices
         Task UpdateAsync(int  id, ProductUpdateDto dto);
         Task UpdateSellerProductAsync(int  id,int userId, ProductUpdateDto dto);
         Task DeleteAsync(int id);
+        Task DeleteMineProduct(int id,int userId);
         Task<IEnumerable<ProductResponseDto>> GetProductsBySellerAsync(int sellerId);
         Task<ProductResponseDto> GetProductBySellerIdAsync(int id, int sellerId);
 

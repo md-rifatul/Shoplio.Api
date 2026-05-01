@@ -11,9 +11,24 @@ namespace Shoplio.Infrastructure.Data.Repositories.Common
         public Repository(AppDbContext context) : base(context) { }
 
         // 🔍 Get by Id
-        public async Task<T?> GetByIdAsync(int id)
+        public async Task<T?> GetByIdAsync(
+                    int id,
+                    Expression<Func<T, bool>>? filter = null,
+                    Func<IQueryable<T>, IQueryable<T>>? include = null)
         {
-            return await _dbSet.FindAsync(id);
+            IQueryable<T> query = _dbSet;
+
+            if (include != null)
+            {
+                query = include(query);
+            }
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            return await query.FirstOrDefaultAsync(x => EF.Property<int>(x, "Id") == id);
         }
 
         // 📋 Get All

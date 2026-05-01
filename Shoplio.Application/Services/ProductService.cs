@@ -193,5 +193,12 @@ namespace Shoplio.Application.Services
             // 3. Save changes
             await _unitOfWork.CommitAsync();
         }
+
+        public async Task DeleteMineProduct(int id, int userId)
+        {
+            var product = await _productRepository.GetByIdAsync(id,p=>p.SellerId==userId);
+            _productRepository.Delete(product);
+            await _unitOfWork.CommitAsync();
+        }
     }
 }

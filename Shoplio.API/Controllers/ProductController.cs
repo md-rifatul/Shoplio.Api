@@ -64,7 +64,7 @@ namespace Shoplio.Web.Controllers
         }
 
         [HttpDelete("delete/{id}")]
-        [Authorize(Roles = Roles.Seller)]
+        [Authorize(Roles = Roles.Admin)]
         public async Task<IActionResult> ProductDeleteById(int id)
         {
             await _productService.DeleteAsync(id);
@@ -96,6 +96,15 @@ namespace Shoplio.Web.Controllers
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
             await _productService.UpdateSellerProductAsync(id, userId, dto);
             return Ok(dto);
+        }
+
+        [Authorize(Roles =Roles.Seller)]
+        [HttpDelete("mine/{id}")]
+        public async Task<IActionResult> DeleteMineProduct(int id)
+        {
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+            await _productService.DeleteMineProduct(id, userId);
+            return Ok();
         }
     }
 }
