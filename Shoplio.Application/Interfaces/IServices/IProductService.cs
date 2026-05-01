@@ -18,6 +18,7 @@ namespace Shoplio.Application.Interfaces.IServices
         Task DeleteMineProduct(int id,int userId);
         Task<IEnumerable<ProductResponseDto>> GetProductsBySellerAsync(int sellerId);
         Task<ProductResponseDto> GetProductBySellerIdAsync(int id, int sellerId);
+        Task<IEnumerable<ProductResponseDto>> GetProductsBySearch(string  search);
 
 
     }

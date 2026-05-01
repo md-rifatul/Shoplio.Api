@@ -200,5 +200,27 @@ namespace Shoplio.Application.Services
             _productRepository.Delete(product);
             await _unitOfWork.CommitAsync();
         }
+
+        public async Task<IEnumerable<ProductResponseDto>> GetProductsBySearch(string search)
+        {
+            var products = await _productRepository.SearchAsync(search);
+
+
+            var result = products.Select(product =>
+            {
+                var dto = _mapper.Map<ProductResponseDto>(product);
+
+                dto.ImageUrls = product.Images?
+                    .Select(img => img.ImageUrl!)
+                    .ToList();
+
+                dto.SellerId = product.SellerId ?? 0;
+                dto.SellerName = product.Seller?.Name;
+
+                return dto;
+            });
+
+            return result;
+        }
     }
 }

@@ -106,5 +106,12 @@ namespace Shoplio.Web.Controllers
             await _productService.DeleteMineProduct(id, userId);
             return Ok();
         }
+
+        [HttpGet("search")]
+        public async Task<IActionResult> GetProductBySearch(string search)
+        {
+            var products = await _productService.GetProductsBySearch(search);
+            return Ok(products);
+        }
     }
 }
