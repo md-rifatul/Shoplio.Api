@@ -32,5 +32,12 @@ namespace Shoplio.Web.Controllers
             var cart = await _cartService.GetCartAsync(userId);
             return Ok(cart);
         }
+        [HttpDelete("delete/{id}")]
+        public async Task<IActionResult> DeleteProductFromCart(int id)
+        {
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+            await _cartService.RemoveFromCartAsync(userId, id);
+            return Ok();
+        }
     }
 }

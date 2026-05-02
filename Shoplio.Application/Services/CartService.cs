@@ -85,7 +85,8 @@ namespace Shoplio.Application.Services
         public async Task RemoveFromCartAsync(int userId, int productId)
         {
             var cart = await _cartRepository.GetByIdAsync(
-                userId,include:query=>query.Include(p=>p.CartItems)
+                filter: u=>u.UserId==userId,
+                include:query=>query.Include(p=>p.CartItems)
                 );
 
             if( cart == null)
