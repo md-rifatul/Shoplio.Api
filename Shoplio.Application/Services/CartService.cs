@@ -57,7 +57,8 @@ namespace Shoplio.Application.Services
         public async Task<Cart> GetOrCreateCart(int userId)
         {
             var cart = await _cartRepository.GetByIdAsync(
-                userId,include:query=>query.Include(p=>p.CartItems)
+                filter: u=>u.UserId == userId,
+                include:query=>query.Include(p=>p.CartItems)
                 );
 
             if(cart == null)
