@@ -21,9 +21,10 @@ namespace Shoplio.Infrastructure.Data.Repositories
         public async Task<IEnumerable<Product>> SearchAsync(string searchTerm)
         {
             var products = await _context.Products
-                .Where(p => p.Name.Contains(searchTerm) || p.Description.Contains(searchTerm))
+                .Where(p => p.Name.Contains(searchTerm) || p.Description!.Contains(searchTerm))
                 .Include(p=>p.Category)
                 .Include(p=>p.Seller)
+                .Include(p=>p.Images)
                 .ToListAsync();
             return products;
         }

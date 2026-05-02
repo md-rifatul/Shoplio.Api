@@ -54,8 +54,7 @@
               "RelativeToolTip": "Shoplio.Application\\Interfaces\\IProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:38:12.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T18:38:12.275Z"
             },
             {
               "$type": "Document",
@@ -65,7 +64,7 @@
               "RelativeDocumentMoniker": "Shoplio.Infrastructure\\Data\\Repositories\\ProductRepository.cs",
               "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Infrastructure\\Data\\Repositories\\ProductRepository.cs*",
               "RelativeToolTip": "Shoplio.Infrastructure\\Data\\Repositories\\ProductRepository.cs*",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBEAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-01T18:34:42.607Z",
               "EditorCaption": ""
@@ -78,7 +77,7 @@
               "RelativeDocumentMoniker": "Shoplio.Application\\Services\\ProductService.cs",
               "ToolTip": "C:\\Users\\Rifatul\\Desktop\\Shoplio.Api\\Shoplio.Application\\Services\\ProductService.cs",
               "RelativeToolTip": "Shoplio.Application\\Services\\ProductService.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAAwM0AAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAYwM0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-01T17:22:03.147Z",
               "EditorCaption": ""
@@ -93,8 +92,7 @@
               "RelativeToolTip": "Shoplio.Application\\Interfaces\\IServices\\IProductService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T17:21:24.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T17:21:24.189Z"
             },
             {
               "$type": "Document",
@@ -106,8 +104,7 @@
               "RelativeToolTip": "Shoplio.API\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAAwHAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T17:19:16.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T17:19:16.74Z"
             },
             {
               "$type": "Document",
@@ -119,8 +116,7 @@
               "RelativeToolTip": "Shoplio.Infrastructure\\Data\\Repositories\\Common\\Repository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T17:04:09.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T17:04:09.173Z"
             },
             {
               "$type": "Document",
@@ -132,8 +128,7 @@
               "RelativeToolTip": "Shoplio.Infrastructure\\Data\\Repositories\\Common\\BaseRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T17:04:06.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T17:04:06.832Z"
             },
             {
               "$type": "Document",
@@ -145,8 +140,7 @@
               "RelativeToolTip": "Shoplio.Application\\Interfaces\\IRepository\\IReadRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T16:34:23.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T16:34:23.637Z"
             }
           ]
         }
