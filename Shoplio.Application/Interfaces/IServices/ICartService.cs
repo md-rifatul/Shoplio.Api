@@ -13,6 +13,6 @@ namespace Shoplio.Application.Interfaces.IServices
         Task<Cart> GetOrCreateCart(int userId);
         Task AddToCartAsync(int userId, AddToCartDto dto);
         Task RemoveFromCartAsync(int userId, int productId);
-        Task<Cart> GetCartAsync(int userId);
+        Task<CartDto> GetCartAsync(int userId);
     }
 }

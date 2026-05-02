@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Shoplio.Application.DTOs;
 using Shoplio.Application.Interfaces;
 using Shoplio.Application.Interfaces.IRepository;
@@ -16,10 +17,12 @@ namespace Shoplio.Application.Services
     {
         private readonly ICartRepository _cartRepository;
         private readonly IUnitOfWork _unitOfWork;
-        public CartService(ICartRepository cartRepository, IUnitOfWork unitOfWork)
+        private readonly IMapper _mapper;
+        public CartService(ICartRepository cartRepository, IUnitOfWork unitOfWork, IMapper mapper)
         {
             _cartRepository = cartRepository;
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
         public async Task AddToCartAsync(int userId, AddToCartDto dto)
@@ -43,14 +46,19 @@ namespace Shoplio.Application.Services
             await _unitOfWork.CommitAsync();
         }
 
-        public async Task<Cart> GetCartAsync(int userId)
+        public async Task<CartDto> GetCartAsync(int userId)
         {
             var cart = await _cartRepository.GetByIdAsync(
-                filter: u=>u.UserId == userId,
-                include:query=>query.Include(p=>p.CartItems)
-                );
+                filter: u => u.UserId == userId,
+                include: query => query.Include(p => p.CartItems)
+                    .ThenInclude(c => c.Product)
+                    .ThenInclude(i => i.Images)
+            );
 
-            return cart;
+            var result = _mapper.Map<CartDto>(cart);
+
+
+            return result;
 
         }
 

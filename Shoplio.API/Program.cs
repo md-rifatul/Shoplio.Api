@@ -55,6 +55,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddAutoMapper(typeof(CategoryProfile).Assembly);
 builder.Services.AddAutoMapper(typeof(ProductProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(CartProfile).Assembly);
 
 // ================== Repository ==================
 
