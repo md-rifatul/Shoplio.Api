@@ -9,7 +9,7 @@ namespace Shoplio.Application.Interfaces.IRepository
 {
     public interface IReadRepository<T> where T : class
     {
-        Task<T?> GetByIdAsync(int id,
+        Task<T?> GetByIdAsync(int? id = null,
     Expression<Func<T, bool>>? filter = null,
     Func<IQueryable<T>, IQueryable<T>>? include = null);
 

@@ -12,7 +12,7 @@ namespace Shoplio.Infrastructure.Data.Repositories.Common
 
         // 🔍 Get by Id
         public async Task<T?> GetByIdAsync(
-                    int id,
+                    int? id = null,
                     Expression<Func<T, bool>>? filter = null,
                     Func<IQueryable<T>, IQueryable<T>>? include = null)
         {
@@ -27,8 +27,11 @@ namespace Shoplio.Infrastructure.Data.Repositories.Common
             {
                 query = query.Where(filter);
             }
-
-            return await query.FirstOrDefaultAsync(x => EF.Property<int>(x, "Id") == id);
+            if (id.HasValue)
+            {
+                return await query.FirstOrDefaultAsync(x => EF.Property<int>(x, "Id") == id);
+            }
+            return await query.FirstOrDefaultAsync();
         }
 
         // 📋 Get All

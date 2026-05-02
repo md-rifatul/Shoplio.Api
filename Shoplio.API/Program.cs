@@ -62,11 +62,13 @@ builder.Services.AddScoped(typeof(IReadRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(IWriteRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ICartRepository,CartRepository>();
 
 // ================== Services ==================
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICartService, CartService>();
 
 // ================== Unit Of Work ==================
 
@@ -74,6 +76,17 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<JwtService>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+
+
+// .NET 6/7/8/9 ?? ????
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    });
+
+
 
 // ================== JWT CONFIG ==================
 
